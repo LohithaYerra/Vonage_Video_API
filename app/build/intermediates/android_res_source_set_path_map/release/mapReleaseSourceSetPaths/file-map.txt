@@ -1,0 +1,8 @@
+com.example.myvideocallapp-pngs-0 C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\build\generated\res\pngs\release
+com.example.myvideocallapp-updated_navigation_xml-1 C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\build\generated\updated_navigation_xml\release
+com.example.myvideocallapp-packageReleaseResources-2 C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\build\intermediates\incremental\release\packageReleaseResources\merged.dir
+com.example.myvideocallapp-packageReleaseResources-3 C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\build\intermediates\incremental\release\packageReleaseResources\stripped.dir
+com.example.myvideocallapp-release-4 C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\build\intermediates\merged_res\release\mergeReleaseResources
+com.example.myvideocallapp-main-5 C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\res
+com.example.myvideocallapp-release-6 C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\release\res
+gradleHome-0 C:\Users\lohitha.yerra\.gradle

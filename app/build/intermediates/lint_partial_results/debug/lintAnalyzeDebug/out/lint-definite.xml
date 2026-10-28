@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 9.3.1" type="incidents">
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the `android.os.Build.VERSION_CODES` javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 37"
+            oldString="36"
+            replacement="37"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="12"
+            column="9"
+            startOffset="226"
+            endLine="12"
+            endColumn="21"
+            endOffset="238"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of `compileSdk` than 36 is available: 37">
+        <fix-replace
+            description="Set compileSdk to 37"
+            oldString="36"
+            replacement="37"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="7"
+            column="5"
+            startOffset="114"
+            endLine="7"
+            endColumn="18"
+            endOffset="127"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.3.0">
+        <fix-replace
+            description="Change to 1.3.0"
+            family="Update versions"
+            oldString="1.1.5"
+            replacement="1.3.0"
+            priority="0"/>
+        <location
+            file="$HOME/AndroidStudioProjects/MyVideoCallApp/gradle/libs.versions.toml"
+            line="9"
+            column="16"
+            startOffset="118"
+            endLine="9"
+            endColumn="23"
+            endOffset="125"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.7.0">
+        <fix-replace
+            description="Change to 3.7.0"
+            family="Update versions"
+            oldString="3.5.1"
+            replacement="3.7.0"
+            priority="0"/>
+        <location
+            file="$HOME/AndroidStudioProjects/MyVideoCallApp/gradle/libs.versions.toml"
+            line="10"
+            column="16"
+            startOffset="141"
+            endLine="10"
+            endColumn="23"
+            endOffset="148"/>
+    </incident>
+
+    <incident
+        id="GradleDynamicVersion"
+        severity="warning"
+        message="Avoid using + in version numbers; can lead to unpredictable and unrepeatable builds (com.vonage:server-sdk:9.+)">
+        <fix-data coordinate="com.vonage:server-sdk:9.+" revision="9.+"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="53"
+            column="20"
+            startOffset="1237"
+            endLine="53"
+            endColumn="47"
+            endOffset="1264"/>
+    </incident>
+
+    <incident
+        id="NewerVersionAvailable"
+        severity="warning"
+        message="A newer version of com.vonage:client-sdk-video than 2.31.0 is available: 2.34.1">
+        <fix-replace
+            description="Change to 2.34.1"
+            family="Update versions"
+            oldString="2.31.0"
+            replacement="2.34.1"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="50"
+            column="20"
+            startOffset="1131"
+            endLine="50"
+            endColumn="56"
+            endOffset="1167"/>
+    </incident>
+
+    <incident
+        id="NewerVersionAvailable"
+        severity="warning"
+        message="A newer version of com.vonage:server-sdk than 9.3.1 is available: 9.12.0">
+        <fix-replace
+            description="Change to 9.12.0"
+            family="Update versions"
+            oldString="9.3.1"
+            replacement="9.12.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="51"
+            column="20"
+            startOffset="1187"
+            endLine="51"
+            endColumn="49"
+            endOffset="1216"/>
+    </incident>
+
+    <incident
+        id="MergeRootFrame"
+        severity="warning"
+        message="This `&lt;FrameLayout>` can be replaced with a `&lt;merge>` tag">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/acitvity_main.xml"
+            line="2"
+            column="1"
+            startOffset="40"
+            endLine="20"
+            endColumn="15"
+            endOffset="673"/>
+    </incident>
+
+    <incident
+        id="UnnecessaryRequiredFeature"
+        severity="warning"
+        message="Consider whether this feature (`android.hardware.camera.autofocus`) really is required for the app to function; you can set `android:required=&quot;false&quot;` to indicate that the feature is used but not required">
+        <fix-attribute
+            description="Set required=&quot;false&quot;"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="required"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="14"
+            column="33"
+            startOffset="756"
+            endLine="14"
+            endColumn="66"
+            endOffset="789"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for pub-devrel-easypermissions2"
+            robot="true">
+            <fix-replace
+                description="Replace with pubDevrelEasypermissions = &quot;3.0.0&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="pubDevrelEasypermissions = &quot;3.0.0&quot;&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/AndroidStudioProjects/MyVideoCallApp/gradle/libs.versions.toml"
+                    startOffset="149"
+                    endOffset="149"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with pub-devrel-easypermissions2 = { module = &quot;pub.devrel:easypermissions&quot;, version.ref = &quot;pubDevrelEasypermissions&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="pub-devrel-easypermissions2 = { module = &quot;pub.devrel:easypermissions&quot;, version.ref = &quot;pubDevrelEasypermissions&quot; }&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/AndroidStudioProjects/MyVideoCallApp/gradle/libs.versions.toml"
+                    startOffset="712"
+                    endOffset="712"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.pub.devrel.easypermissions2"
+                robot="true"
+                replacement="libs.pub.devrel.easypermissions2"
+                priority="0">
+                <range
+                    file="${:app*projectDir}/build.gradle"
+                    startOffset="1076"
+                    endOffset="1110"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="48"
+            column="20"
+            startOffset="1076"
+            endLine="48"
+            endColumn="54"
+            endOffset="1110"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for com-vonage-client-sdk-video3"
+            robot="true">
+            <fix-replace
+                description="Replace with comVonageClientSdkVideo = &quot;2.31.0&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="comVonageClientSdkVideo = &quot;2.31.0&quot;&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/AndroidStudioProjects/MyVideoCallApp/gradle/libs.versions.toml"
+                    startOffset="46"
+                    endOffset="46"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with com-vonage-client-sdk-video3 = { module = &quot;com.vonage:client-sdk-video&quot;, version.ref = &quot;comVonageClientSdkVideo&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="com-vonage-client-sdk-video3 = { module = &quot;com.vonage:client-sdk-video&quot;, version.ref = &quot;comVonageClientSdkVideo&quot; }&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/AndroidStudioProjects/MyVideoCallApp/gradle/libs.versions.toml"
+                    startOffset="257"
+                    endOffset="257"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.com.vonage.client.sdk.video3"
+                robot="true"
+                replacement="libs.com.vonage.client.sdk.video3"
+                priority="0">
+                <range
+                    file="${:app*projectDir}/build.gradle"
+                    startOffset="1131"
+                    endOffset="1167"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="50"
+            column="20"
+            startOffset="1131"
+            endLine="50"
+            endColumn="56"
+            endOffset="1167"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for com-vonage-server-sdk3"
+            robot="true">
+            <fix-replace
+                description="Replace with comVonageServerSdk = &quot;9.3.1&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="comVonageServerSdk = &quot;9.3.1&quot;&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/AndroidStudioProjects/MyVideoCallApp/gradle/libs.versions.toml"
+                    startOffset="46"
+                    endOffset="46"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with com-vonage-server-sdk3 = { module = &quot;com.vonage:server-sdk&quot;, version.ref = &quot;comVonageServerSdk&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="com-vonage-server-sdk3 = { module = &quot;com.vonage:server-sdk&quot;, version.ref = &quot;comVonageServerSdk&quot; }&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/AndroidStudioProjects/MyVideoCallApp/gradle/libs.versions.toml"
+                    startOffset="257"
+                    endOffset="257"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.com.vonage.server.sdk3"
+                robot="true"
+                replacement="libs.com.vonage.server.sdk3"
+                priority="0">
+                <range
+                    file="${:app*projectDir}/build.gradle"
+                    startOffset="1187"
+                    endOffset="1216"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="51"
+            column="20"
+            startOffset="1187"
+            endLine="51"
+            endColumn="49"
+            endOffset="1216"/>
+    </incident>
+
+</incidents>

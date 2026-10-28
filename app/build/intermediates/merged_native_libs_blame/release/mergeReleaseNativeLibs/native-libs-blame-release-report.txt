@@ -1,0 +1,3 @@
+lib/arm64-v8a/libopentok.so->com.vonage:client-sdk-video:2.31.0
+lib/armeabi-v7a/libopentok.so->com.vonage:client-sdk-video:2.31.0
+lib/x86_64/libopentok.so->com.vonage:client-sdk-video:2.31.0

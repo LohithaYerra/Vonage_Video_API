@@ -1,0 +1,185 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.myvideocallapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+7-->INJECTED
+8        android:minSdkVersion="24"
+8-->INJECTED
+9        android:targetSdkVersion="36" />
+9-->INJECTED
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:5:5-65
+11-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:5:22-62
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:6:5-67
+12-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+13-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:7:5-71
+13-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:7:22-68
+14    <uses-permission android:name="android.permission.WAKE_LOCK" />
+14-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:8:5-68
+14-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:8:22-65
+15    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+15-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:9:5-80
+15-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:9:22-77
+16    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+16-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:10:5-75
+16-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:10:22-72
+17    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+17-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:11:5-76
+17-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:11:22-73
+18
+19    <uses-feature android:name="android.hardware.camera" />
+19-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:13:5-60
+19-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:13:19-57
+20    <uses-feature android:name="android.hardware.camera.autofocus" />
+20-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:14:5-70
+20-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:14:19-67
+21
+22    <permission
+22-->[androidx.core:core:1.16.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\2d0e8fe84c47a15cd77e743c49820b33\transformed\core-1.16.0\AndroidManifest.xml:22:5-24:47
+23        android:name="com.example.myvideocallapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+23-->[androidx.core:core:1.16.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\2d0e8fe84c47a15cd77e743c49820b33\transformed\core-1.16.0\AndroidManifest.xml:23:9-81
+24        android:protectionLevel="signature" />
+24-->[androidx.core:core:1.16.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\2d0e8fe84c47a15cd77e743c49820b33\transformed\core-1.16.0\AndroidManifest.xml:24:9-44
+25
+26    <uses-permission android:name="com.example.myvideocallapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+26-->[androidx.core:core:1.16.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\2d0e8fe84c47a15cd77e743c49820b33\transformed\core-1.16.0\AndroidManifest.xml:26:5-97
+26-->[androidx.core:core:1.16.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\2d0e8fe84c47a15cd77e743c49820b33\transformed\core-1.16.0\AndroidManifest.xml:26:22-94
+27    <uses-permission android:name="android.permission.BLUETOOTH" />
+27-->[com.opentok.android:opentok-android-sdk:2.31.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\f6c56d41f6fd6977c4d2df5115a7aca9\transformed\opentok-android-sdk-2.31.0\AndroidManifest.xml:11:5-68
+27-->[com.opentok.android:opentok-android-sdk:2.31.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\f6c56d41f6fd6977c4d2df5115a7aca9\transformed\opentok-android-sdk-2.31.0\AndroidManifest.xml:11:22-65
+28    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+28-->[com.opentok.android:opentok-android-sdk:2.31.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\f6c56d41f6fd6977c4d2df5115a7aca9\transformed\opentok-android-sdk-2.31.0\AndroidManifest.xml:14:5-79
+28-->[com.opentok.android:opentok-android-sdk:2.31.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\f6c56d41f6fd6977c4d2df5115a7aca9\transformed\opentok-android-sdk-2.31.0\AndroidManifest.xml:14:22-76
+29
+30    <uses-feature
+30-->[com.opentok.android:opentok-android-sdk:2.31.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\f6c56d41f6fd6977c4d2df5115a7aca9\transformed\opentok-android-sdk-2.31.0\AndroidManifest.xml:20:5-22:35
+31        android:glEsVersion="0x00020000"
+31-->[com.opentok.android:opentok-android-sdk:2.31.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\f6c56d41f6fd6977c4d2df5115a7aca9\transformed\opentok-android-sdk-2.31.0\AndroidManifest.xml:21:9-41
+32        android:required="true" />
+32-->[com.opentok.android:opentok-android-sdk:2.31.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\f6c56d41f6fd6977c4d2df5115a7aca9\transformed\opentok-android-sdk-2.31.0\AndroidManifest.xml:22:9-32
+33
+34    <application
+34-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:16:5-37:19
+35        android:allowBackup="true"
+35-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:17:9-35
+36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+36-->[androidx.core:core:1.16.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\2d0e8fe84c47a15cd77e743c49820b33\transformed\core-1.16.0\AndroidManifest.xml:28:18-86
+37        android:dataExtractionRules="@xml/data_extraction_rules"
+37-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:18:9-65
+38        android:debuggable="true"
+39        android:extractNativeLibs="false"
+39-->INJECTED
+40        android:fullBackupContent="@xml/backup_rules"
+40-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:19:9-54
+41        android:icon="@mipmap/ic_launcher"
+41-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:20:9-43
+42        android:label="@string/app_name"
+42-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:21:9-41
+43        android:roundIcon="@mipmap/ic_launcher_round"
+43-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:22:9-54
+44        android:supportsRtl="true"
+44-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:23:9-35
+45        android:theme="@style/Theme.MyVideoCallApp" >
+45-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:24:9-52
+46        <activity
+46-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:25:9-35:20
+47            android:name="com.example.myvideocallapp.MainActivity"
+47-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:26:13-41
+48            android:exported="true" >
+48-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:27:13-36
+49            <intent-filter>
+49-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:29:13-33:29
+50                <action android:name="android.intent.action.MAIN" />
+50-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:30:17-68
+50-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:30:25-66
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:32:17-76
+52-->C:\Users\lohitha.yerra\AndroidStudioProjects\MyVideoCallApp\app\src\main\AndroidManifest.xml:32:27-74
+53            </intent-filter>
+54        </activity>
+55        <activity
+55-->[pub.devrel:easypermissions:3.0.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\731424d940bda580f7d60c97341c520b\transformed\easypermissions-3.0.0\AndroidManifest.xml:12:9-16:66
+56            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
+56-->[pub.devrel:easypermissions:3.0.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\731424d940bda580f7d60c97341c520b\transformed\easypermissions-3.0.0\AndroidManifest.xml:13:13-86
+57            android:exported="false"
+57-->[pub.devrel:easypermissions:3.0.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\731424d940bda580f7d60c97341c520b\transformed\easypermissions-3.0.0\AndroidManifest.xml:14:13-37
+58            android:label=""
+58-->[pub.devrel:easypermissions:3.0.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\731424d940bda580f7d60c97341c520b\transformed\easypermissions-3.0.0\AndroidManifest.xml:15:13-29
+59            android:theme="@style/EasyPermissions.Transparent" />
+59-->[pub.devrel:easypermissions:3.0.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\731424d940bda580f7d60c97341c520b\transformed\easypermissions-3.0.0\AndroidManifest.xml:16:13-63
+60
+61        <provider
+61-->[androidx.emoji2:emoji2:1.3.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\05a7c3ab15bc34efc2d1300213425926\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+62            android:name="androidx.startup.InitializationProvider"
+62-->[androidx.emoji2:emoji2:1.3.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\05a7c3ab15bc34efc2d1300213425926\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+63            android:authorities="com.example.myvideocallapp.androidx-startup"
+63-->[androidx.emoji2:emoji2:1.3.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\05a7c3ab15bc34efc2d1300213425926\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+64            android:exported="false" >
+64-->[androidx.emoji2:emoji2:1.3.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\05a7c3ab15bc34efc2d1300213425926\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+65            <meta-data
+65-->[androidx.emoji2:emoji2:1.3.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\05a7c3ab15bc34efc2d1300213425926\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+66                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+66-->[androidx.emoji2:emoji2:1.3.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\05a7c3ab15bc34efc2d1300213425926\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+67                android:value="androidx.startup" />
+67-->[androidx.emoji2:emoji2:1.3.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\05a7c3ab15bc34efc2d1300213425926\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+68            <meta-data
+68-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\5f676b0114629e526ae198f8eb80308d\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+69                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+69-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\5f676b0114629e526ae198f8eb80308d\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+70                android:value="androidx.startup" />
+70-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\5f676b0114629e526ae198f8eb80308d\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+71            <meta-data
+71-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\b44f778ddc846bebb6c98eddf6da4a32\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+72                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+72-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\b44f778ddc846bebb6c98eddf6da4a32\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+73                android:value="androidx.startup" />
+73-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\b44f778ddc846bebb6c98eddf6da4a32\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+74        </provider>
+75
+76        <receiver
+76-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\b44f778ddc846bebb6c98eddf6da4a32\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+77            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+77-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\b44f778ddc846bebb6c98eddf6da4a32\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+78            android:directBootAware="false"
+78-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\b44f778ddc846bebb6c98eddf6da4a32\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+79            android:enabled="true"
+79-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\b44f778ddc846bebb6c98eddf6da4a32\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+80            android:exported="true"
+80-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\b44f778ddc846bebb6c98eddf6da4a32\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+81            android:permission="android.permission.DUMP" >
+81-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\b44f778ddc846bebb6c98eddf6da4a32\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+82            <intent-filter>
+82-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\b44f778ddc846bebb6c98eddf6da4a32\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+83                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+83-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\b44f778ddc846bebb6c98eddf6da4a32\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+83-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\b44f778ddc846bebb6c98eddf6da4a32\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+84            </intent-filter>
+85            <intent-filter>
+85-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\b44f778ddc846bebb6c98eddf6da4a32\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+86                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+86-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\b44f778ddc846bebb6c98eddf6da4a32\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+86-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\b44f778ddc846bebb6c98eddf6da4a32\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+87            </intent-filter>
+88            <intent-filter>
+88-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\b44f778ddc846bebb6c98eddf6da4a32\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+89                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+89-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\b44f778ddc846bebb6c98eddf6da4a32\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+89-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\b44f778ddc846bebb6c98eddf6da4a32\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+90            </intent-filter>
+91            <intent-filter>
+91-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\b44f778ddc846bebb6c98eddf6da4a32\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+92                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+92-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\b44f778ddc846bebb6c98eddf6da4a32\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+92-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\lohitha.yerra\.gradle\caches\9.5.0\transforms\b44f778ddc846bebb6c98eddf6da4a32\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+93            </intent-filter>
+94        </receiver>
+95    </application>
+96
+97</manifest>
